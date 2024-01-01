@@ -1,0 +1,45 @@
+img {
+    width: 15rem;
+}
+
+/* .left-block {
+    width: 15rem;
+} */
+
+hr {
+    border-top: 0 ;
+}
+
+.custom-hr {
+    background-color: gainsboro;
+    height: 0.25rem;
+    opacity: 1;
+}
+
+.fs-0 {
+    font-size: 0;
+}
+
+@media screen and (min-width:992px) {
+    .left-block-width {
+        width: 25%;
+        /* background-color: aqua; */
+    }
+
+    .right-block-width {
+        width: 75%;
+        /* background-color: aqua; */
+    }
+}
+
+@media screen and (max-width:992px) {
+    .left-block-width {
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+
+    .right-block-width {
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+}
