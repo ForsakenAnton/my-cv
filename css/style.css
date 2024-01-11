@@ -1,17 +1,16 @@
-img {
-    width: 15rem;
-}
-
-/* .left-block {
-    width: 15rem;
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
 } */
 
+img {
+    width: 17rem;
+}
+
 hr {
-    border-top: 0 ;
+    border-top: 0;
 }
 
 .custom-hr {
-    background-color: gainsboro;
     height: 0.25rem;
     opacity: 1;
 }
@@ -23,23 +22,90 @@ hr {
 @media screen and (min-width:992px) {
     .left-block-width {
         width: 25%;
-        /* background-color: aqua; */
     }
 
     .right-block-width {
         width: 75%;
-        /* background-color: aqua; */
     }
 }
 
 @media screen and (max-width:992px) {
     .left-block-width {
         width: 100%;
-        /* background-color: aquamarine; */
     }
 
     .right-block-width {
         width: 100%;
-        /* background-color: aquamarine; */
     }
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    /* padding-left: 0; */
+}
+
+ul li::before {
+    content: '\276F';
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+ul li ul li::before {
+    content: '\2012';
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+ul li ul li ul li::before {
+    content: '\2012';
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.microsoft-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+    justify-self: center;
+    width: 28px;
+    height: 28px;
+}
+
+.microsoft-container:hover {
+    opacity: 0.75;
+}
+
+.microsoft-cell {
+    width: 100%;
+    height: 100%;
+}
+
+.microsoft-blue {
+    background-color: #0078D4;
+}
+
+.microsoft-green {
+    background-color: #00A862;
+}
+
+.microsoft-yellow {
+    background-color: #FFB900;
+}
+
+.microsoft-red {
+    background-color: #D83B01;
+}
+
+.top-10 {
+    top: 10%;
+}
+
+.start-90 {
+    left: 90%;
 }
