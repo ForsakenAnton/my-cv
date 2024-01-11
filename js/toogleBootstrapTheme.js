@@ -41,7 +41,7 @@ function toogleThemeForSwitchThemeButton() {
     //     "Dark";
 
     let toogleThemeButton = document.getElementById("toogleThemeButton");
-    if (globalThemeAttr == "light") {
+    if (globalThemeAttr == "light" || !globalThemeAttr) {
         toogleThemeButton.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
         toogleThemeButton.classList = 'btn text-warning fs-1 border-0';
     }
